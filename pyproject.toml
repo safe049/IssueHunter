@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issuehunter"
+version = "0.1.0"
+description = "Search GitHub for open, unassigned issues that nobody is fixing yet"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "requests>=2.31.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+issuehunter = "issuehunter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["issuehunter*"]
