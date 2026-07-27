@@ -20,6 +20,12 @@ Search GitHub for **open, unassigned issues** that nobody is fixing yet — perf
 
 ## Installation
 
+## PyPI
+```bash
+pip install issuehunter
+```
+
+## Source
 ```bash
 pip install -e .
 ```
